@@ -269,7 +269,7 @@ export function BackendProvider({ children }: { children: React.ReactNode }) {
   };
 
   // ============ TEAM ACTIONS ============
-  const createTeam = async (teamData: Omit<Team, 'status' | 'aiResult' | 'submission'>) => {
+  const createTeam = async (teamData: Omit<Team, 'status' | 'aiResult' | 'submission' | 'round1Score' | 'round2Score' | 'round3Score' | 'totalScore' | 'shortlisted'>) => {
     try {
       setLoading(true);
       const response = await fetch(`${API_BASE_URL}/auth/register`, {
@@ -507,7 +507,7 @@ export function BackendProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  const createEvent = async (eventData: Omit<HackathonEvent, 'id'>) => {
+  const createEvent = async (eventData: Omit<HackathonEvent, 'id' | 'status'>) => {
     try {
       const response = await fetch(`${API_BASE_URL}/events`, {
         method: 'POST',

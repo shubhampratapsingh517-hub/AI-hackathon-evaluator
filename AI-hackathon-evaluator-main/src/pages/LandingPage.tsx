@@ -52,7 +52,7 @@ export default function LandingPage() {
       </div>
 
       {/* Hero Section */}
-      <main className="flex-1 flex flex-col items-center justify-center relative z-10 px-4 sm:px-6 lg:px-8 text-center mt-20 mb-20">
+      <main className="flex-1 flex flex-col items-center justify-center relative z-10 px-4 sm:px-6 lg:px-8 text-center mt-32 mb-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function LandingPage() {
           <motion.h1 
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="text-5xl md:text-7xl lg:text-8xl font-black font-orbitron tracking-widest text-white mb-8 leading-tight uppercase"
+            className="text-5xl md:text-7xl lg:text-8xl font-black font-orbitron tracking-widest text-white mb-6 leading-[1.1] uppercase"
           >
             AI <span className="text-cyan-400 drop-shadow-[0_0_25px_rgba(34,211,238,0.8)]">HACKATHON</span> <br />
             <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">EVALUATOR</span>
